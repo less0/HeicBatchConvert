@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2"/>
+        <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77"/>
+        <PackageReference Include="Unity.Container" Version="5.11.11"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\HeicBatchConvert.Application\HeicBatchConvert.Application.csproj"/>
+        <ProjectReference Include="..\HeicBatchConvert.Core\HeicBatchConvert.Core.csproj"/>
+        <ProjectReference Include="..\HeicBatchConvert.Infrastructure\HeicBatchConvert.Infrastructure.csproj"/>
+    </ItemGroup>
+
+</Project>
